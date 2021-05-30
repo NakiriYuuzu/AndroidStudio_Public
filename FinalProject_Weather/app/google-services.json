@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1030938761805",
+    "firebase_url": "https://databaseforweatherappbyyuuzu-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "databaseforweatherappbyyuuzu",
+    "storage_bucket": "databaseforweatherappbyyuuzu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030938761805:android:3f03ca0207d8d7eae95a04",
+        "android_client_info": {
+          "package_name": "tw.edu.pu.weather"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030938761805-iv7r1mlsp6vfbghfrb1uqrtnhbucb229.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzNYbzvrJ2FdiOt0-kUijIpG8-lJJgWRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030938761805-iv7r1mlsp6vfbghfrb1uqrtnhbucb229.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

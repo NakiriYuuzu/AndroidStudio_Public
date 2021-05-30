@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_FavMain"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="#95E0FC"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_FavCity"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/tv_City"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:translationZ="10dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_FavCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="65dp"
+                android:text="@string/tv_country"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_FavTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="120dp"
+                android:text="@string/tv_temperatureIcon"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:translationZ="10dp" />
+
+            <ImageView
+                android:id="@+id/iv_FavIconMain"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="188dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/sunny" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_FavState"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="218dp"
+                android:layout_marginTop="152dp"
+                android:text="@string/tv_State"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="6dp"
+                app:cardCornerRadius="30dp"
+                android:paddingBottom="100dp">
+
+                <View
+                    android:layout_width="315dp"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="65dp"
+                    android:background="#80FFFFFF"
+                    android:translationZ="6dp" />
+
+                <View
+                    android:layout_width="315dp"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100dp"
+                    android:background="#80FFFFFF"
+                    android:translationZ="6dp" />
+
+                <View
+                    android:layout_width="315dp"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="135dp"
+                    android:background="#80FFFFFF"
+                    android:translationZ="6dp" />
+
+                <View
+                    android:layout_width="315dp"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="170dp"
+                    android:background="#80FFFFFF"
+                    android:translationZ="6dp" />
+
+                <View
+                    android:layout_width="315dp"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="205dp"
+                    android:background="#80FFFFFF"
+                    android:translationZ="6dp" />
+
+                <View
+                    android:layout_width="315dp"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="240dp"
+                    android:background="#80FFFFFF"
+                    android:translationZ="6dp" />
+
+                <View
+                    android:layout_width="315dp"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="275dp"
+                    android:background="#80FFFFFF"
+                    android:translationZ="6dp" />
+
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="72dp"
+                    android:src="@drawable/highlow"
+                    android:translationZ="6dp" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="107dp"
+                    android:src="@drawable/ic_baseline_hot_tub_24"
+                    android:translationZ="6dp" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="142dp"
+                    android:src="@drawable/humidity"
+                    android:translationZ="6dp" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="177dp"
+                    android:src="@drawable/pressure"
+                    android:translationZ="6dp" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="212dp"
+                    android:src="@drawable/visibility"
+                    android:translationZ="6dp" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="247dp"
+                    android:src="@drawable/wind"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="72dp"
+                    android:text="@string/tv_highlow"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="107dp"
+                    android:text="@string/tv_feelLikeTemp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="142dp"
+                    android:text="@string/tv_Humid"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="177dp"
+                    android:text="@string/tv_Pressure"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="212dp"
+                    android:text="@string/tv_Visibility"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="247dp"
+                    android:text="@string/tv_Wind"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <!--        displayValue            -->
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_Fav_HighLow"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="72dp"
+                    android:text="@string/tv_temperatureIcon"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_Fav_FeelLike"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="107dp"
+                    android:text="@string/tv_temperatureIcon"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_Fav_Humid"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="142dp"
+                    android:text="@string/tv_temperatureIcon"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_Fav_Pressure"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="177dp"
+                    android:text="@string/tv_temperatureIcon"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_Fav_Visibility"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="212dp"
+                    android:text="@string/tv_temperatureIcon"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_Fav_Wind"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="247dp"
+                    android:text="@string/tv_temperatureIcon"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:translationZ="6dp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="290dp"
+                    app:cardBackgroundColor="#5082D6"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/fav_IconNow"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/sunny"
+                        android:translationZ="1dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_Fav_TempNow"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/tv_temperatureIcon"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:translationZ="1dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_Fav_DateNow"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="65dp"
+                        android:text="@string/tv_date"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:translationZ="1dp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="98dp"
+                    android:layout_marginTop="290dp"
+                    app:cardBackgroundColor="#5082D6"
+                    app:cardCornerRadius="20dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_Fav_TempD1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/tv_temperatureIcon"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:translationZ="1dp" />
+
+                    <ImageView
+                        android:id="@+id/fav_IconD1"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/sunny"
+                        android:translationZ="1dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_Fav_DateD1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="65dp"
+                        android:text="@string/tv_date"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:translationZ="1dp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="182dp"
+                    android:layout_marginTop="290dp"
+                    app:cardBackgroundColor="#5082D6"
+                    app:cardCornerRadius="20dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_Fav_TempD2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/tv_temperatureIcon"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:translationZ="1dp" />
+
+                    <ImageView
+                        android:id="@+id/fav_IconD2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/sunny"
+                        android:translationZ="1dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_Fav_DateD2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="65dp"
+                        android:text="@string/tv_date"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:translationZ="1dp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="265dp"
+                    android:layout_marginTop="290dp"
+                    app:cardBackgroundColor="#5082D6"
+                    app:cardCornerRadius="20dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_Fav_TempD3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/tv_temperatureIcon"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:translationZ="1dp" />
+
+                    <ImageView
+                        android:id="@+id/fav_IconD3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/sunny"
+                        android:translationZ="1dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_Fav_DateD3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="65dp"
+                        android:text="@string/tv_date"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:translationZ="1dp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="380dp"
+                    android:layout_height="412dp"
+                    android:layout_marginStart="-9dp"
+                    android:background="@drawable/backgroundimage">
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
