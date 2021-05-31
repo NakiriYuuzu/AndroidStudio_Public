@@ -5,9 +5,6 @@ import android.content.res.Resources;
 import android.util.Log;
 import android.widget.Toast;
 
-import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelStoreOwner;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -29,8 +26,6 @@ public class VolleyApi_Search {
 
     private final Activity activity;
     private final String tempUrl;
-
-    ShareViewModel_Home viewModel;
 
     private String iconMain, city, country, state, temp, lowHighTemp, feelLikeTemp, humid, pressure, visibility, wind;
     private int condition, icDataMain, d5Condition1, d5Condition2, d5Condition3, firstDay = 0;
@@ -142,37 +137,7 @@ public class VolleyApi_Search {
                     d5Condition2 = res.getIdentifier(d5IconD2, "drawable", activity.getPackageName());
                     d5Condition3 = res.getIdentifier(d5IconD3, "drawable", activity.getPackageName());
 
-                    //Log
-                    String log = "TestData_SEARCH";
-                    LocalTime time = LocalTime.now();
-                    Log.e("time", String.valueOf(time));
-                    Log.d(log, String.valueOf(firstDay));
-                    Log.d(log, city);
-                    Log.d(log, country);
-                    Log.d(log, temp);
-                    Log.d(log, String.valueOf(icDataMain));
-                    Log.d(log, state);
-                    Log.d(log, lowHighTemp);
-                    Log.d(log, feelLikeTemp);
-                    Log.d(log, humid);
-                    Log.d(log, pressure);
-                    Log.d(log, visibility);
-                    Log.d(log, wind);
-                    Log.d(log, d5Temp1);
-                    Log.d(log, d5Temp2);
-                    Log.d(log, d5Temp3);
-                    Log.d(log, d5Date1);
-                    Log.d(log, d5Date2);
-                    Log.d(log, d5Date3);
-                    Log.d(log, String.valueOf(d5Condition1));
-                    Log.d(log, String.valueOf(d5Condition2));
-                    Log.d(log, String.valueOf(d5Condition3));
-                    Log.d(log,"--------------------------------");
-
                     Toast.makeText(activity, "Success! Add to Favorites.", Toast.LENGTH_SHORT).show();
-
-                    //setup Ui
-                    setupUISearchD5();
 
                     //Upload to firebase
                     fireBaseData();
@@ -192,37 +157,6 @@ public class VolleyApi_Search {
 
         RequestQueue requestQueue = Volley.newRequestQueue(activity);
         requestQueue.add(stringRequest);
-    }
-
-    public void setupUISearchD5() {
-        viewModel = new ViewModelProvider((ViewModelStoreOwner) activity).get(ShareViewModel_Home.class);
-
-        viewModel.setCity(city);
-        viewModel.setCountry(country);
-        viewModel.setState(state);
-
-        viewModel.setMinMaxTemp(lowHighTemp);
-        viewModel.setFeelLike(feelLikeTemp);
-        viewModel.setHumid(humid);
-        viewModel.setPressure(pressure);
-        viewModel.setVisibility(visibility);
-        viewModel.setWind(wind);
-
-        viewModel.setTemp(temp);
-        viewModel.setTempNow(temp);
-        viewModel.setTempD1(d5Temp1);
-        viewModel.setTempD2(d5Temp2);
-        viewModel.setTempD3(d5Temp3);
-
-        viewModel.setIcon(icDataMain);
-        viewModel.setIconNow(icDataMain);
-        viewModel.setIconD1(d5Condition1);
-        viewModel.setIconD2(d5Condition2);
-        viewModel.setIconD3(d5Condition3);
-
-        viewModel.setDateD1(d5Date1);
-        viewModel.setDateD2(d5Date2);
-        viewModel.setDateD3(d5Date3);
     }
 
     public void fireBaseData() {
